@@ -1,0 +1,12 @@
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.active {
+    color: var(--form-color);
+    text-transform: uppercase;
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.inputBlock {
+    min-width: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    min-height: 2.5rem;
+}
+
+.equal {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.btn {
+    color: var(--button-color);
+    background-color: var(--text-color);
+    border-style: none;
+    min-width: 5rem;
+    min-height: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    background-color: var(--button-color);
+}

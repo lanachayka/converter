@@ -1,0 +1,5 @@
+.select {
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-align: center;
+}

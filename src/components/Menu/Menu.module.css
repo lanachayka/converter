@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.line {
+    color: var(--line-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
