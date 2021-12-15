@@ -9,16 +9,16 @@ interface ConvertingProps {
 
 const Converting: React.FC<ConvertingProps> = (props) => {
 
-    const [convertFrom, setConvertFrom] = useState(props.units[0]);
-    const [convertTo, setConvertTo] = useState(props.units[0]);
-    const [enteredValue, setEnteredValue] = useState('');
-    const [result, setResult] = useState('');
+    const [convertFrom, setConvertFrom] = useState<string>(props.units[0]);
+    const [convertTo, setConvertTo] = useState<string>(props.units[0]);
+    const [enteredValue, setEnteredValue] = useState<string>('');
+    const [result, setResult] = useState<string>('');
 
-    const convert = () => {
+    const convert = ():void => {
         setResult(props.convertingMethod(convertFrom, convertTo, enteredValue));
     }
 
-    const onInputChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+    const onInputChange = (event:React.ChangeEvent<HTMLInputElement>):void => {
         setEnteredValue(event.target.value);
     }
 

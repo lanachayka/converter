@@ -8,7 +8,7 @@ interface DropDownListProps {
 
 const DropDownList: React.FC<DropDownListProps> = (props) => {
 
-    const changeValue = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const changeValue = (event: React.ChangeEvent<HTMLSelectElement>):void => {
         props.onSelectChange(event.target.value);
     }
     return <select className={st.select} onChange={changeValue}>

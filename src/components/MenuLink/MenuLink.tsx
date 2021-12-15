@@ -8,7 +8,7 @@ interface MenuLinkProps {
 }
 
 const MenuLink: React.FC<MenuLinkProps> = (props) => {
-    const match = useMatch({path: useResolvedPath(props.way).pathname, end:true});
+    const match = useMatch<string, string>({path: useResolvedPath(props.way).pathname, end:true});
     return <NavLink
         to={props.way}
         className={match ? st.active: st.link}>
