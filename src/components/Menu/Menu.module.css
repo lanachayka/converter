@@ -9,14 +9,15 @@
 }
 
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.5rem;
+    display: grid;
+    justify-items: center;
 }
 
 @media (min-width: 500px) {
     .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         gap: 4rem;
     }
 }

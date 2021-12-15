@@ -3,10 +3,14 @@
     text-decoration: none;
     color: var(--text-color);
     cursor: pointer;
+    border-style: none;
+    font-size: 1.2rem;
 }
 
 .active {
     color: var(--form-color);
     text-transform: uppercase;
     text-decoration: underline;
+    border-style: none;
+    font-size: 1.2rem;
 }

@@ -1,16 +1,22 @@
 import React from 'react';
 import st from './Menu.module.css'
-import MenuLink from '../MenuLink/MenuLink';
+import MenuLink from "../MenuLink/MenuLink";
 
-const Menu: React.FC = () => {
+interface MenuProps {
+    types: string[];
+    setCurrentType: (type: string)=>void;
+    active: string;
+}
+
+const Menu: React.FC<MenuProps> = (props) => {
     return (
         <div>
             <h1 className={st.title}>Choose what you want to convert:</h1>
-            <nav className={st.navigation}>
-                <MenuLink way="/converter/length" name="Length" />
-                <MenuLink way="/converter/weight" name="Weight" />
-                <MenuLink way="/converter/temperature" name="Temperature" />
-            </nav>
+            <div className={st.navigation}>
+                {props.types.map((type, index) =>
+                   <MenuLink key={index} type={type} setCurrentType={props.setCurrentType} active={props.active}/>
+                )}
+            </div>
             <hr className={st.line}/>
         </div>
     );

@@ -4,7 +4,7 @@ import DropDownList from '../DropDownList/DropDownList'
 
 interface ConvertingProps {
     units: string[];
-    convertingMethod: (from:string, to:string, value: string)=>string;
+    convertingMethod: (from:string, to:string, value:string)=>string;
 }
 
 const Converting: React.FC<ConvertingProps> = (props) => {
