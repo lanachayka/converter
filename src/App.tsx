@@ -16,13 +16,12 @@ const App:React.FC = () => {
     <div className="App">
             <DateField />
             <Menu types={types} setCurrentType={setCurrentType} active={currentType}/>
-            <Converting units={currentType === 'length'
-                            ? lengthValues : currentType ==='weight'
-                            ? weightValues : temperatureValues}
-                        convertingMethod={currentType === 'length'
-                            ? convertLength : currentType ==='weight'
-                            ? convertWeight : convertTemperature}
-            />
+            {currentType === 'length' &&
+                <Converting units={lengthValues} convertingMethod={convertLength} />}
+            {currentType === 'weight' &&
+                <Converting units={weightValues} convertingMethod={convertWeight} />}
+            {currentType === 'temperature' &&
+                <Converting units={temperatureValues} convertingMethod={convertTemperature} />}
     </div>
   );
 }
