@@ -7,9 +7,9 @@ const Menu: React.FC = () => {
         <div>
             <h1 className={st.title}>Choose what you want to convert:</h1>
             <nav className={st.navigation}>
-                <MenuLink way="/length" name="Length" />
-                <MenuLink way="/weight" name="Weight" />
-                <MenuLink way="/temperature" name="Temperature" />
+                <MenuLink way="/converter/length" name="Length" />
+                <MenuLink way="/converter/weight" name="Weight" />
+                <MenuLink way="/converter/temperature" name="Temperature" />
             </nav>
             <hr className={st.line}/>
         </div>

@@ -11,9 +11,9 @@ const App:React.FC = () => {
     <div className="App">
         <Menu />
         <Routes>
-            <Route path="/length" element={<Length />}>Length</Route>
-            <Route path="/weight" element={<Weight />}>Weight</Route>
-            <Route path="/temperature" element={<Temperature/>}>Temperature</Route>
+            <Route path="/converter/length" element={<Length />}>Length</Route>
+            <Route path="/converter/weight" element={<Weight />}>Weight</Route>
+            <Route path="/converter/temperature" element={<Temperature/>}>Temperature</Route>
         </Routes>
     </div>
   );
