@@ -8,16 +8,16 @@ import Temperature from './components/Temperature/Temperature';
 
 function App() {
   const routes: RouteObject[] = [{
-      path: '/',
+      path: '/convertor',
       element: <Menu />,
       children: [
-          {path: '/length',
+          {path: '/convertor/length',
           element: <Length/>
           },
-          {path: '/weight',
+          {path: '/convertor/weight',
           element: <Weight/>
           },
-          {path: '/temperature',
+          {path: '/convertor/temperature',
               element: <Temperature/>
           },
       ]
