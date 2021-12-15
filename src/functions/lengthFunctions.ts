@@ -1,4 +1,4 @@
-const fromMeters = (type:string, value:string) => {
+const fromMeters = (type:string, value:string):string => {
     const m = parseInt(value);
     switch (type) {
         case 'kilometer' :
@@ -13,7 +13,7 @@ const fromMeters = (type:string, value:string) => {
     }
 }
 
-const fromKilometer = (type:string, value: string) => {
+const fromKilometer = (type:string, value: string):string => {
     const km = parseInt(value);
     switch (type) {
         case 'meter' :
@@ -28,7 +28,7 @@ const fromKilometer = (type:string, value: string) => {
     }
 }
 
-const fromFeet = (type:string, value: string) => {
+const fromFeet = (type:string, value: string):string => {
     const f = parseInt(value);
     switch (type) {
         case 'meters' :
@@ -43,7 +43,7 @@ const fromFeet = (type:string, value: string) => {
     }
 }
 
-const fromYards = (type:string, value: string) => {
+const fromYards = (type:string, value: string):string => {
     const y = parseInt(value);
     switch (type) {
         case 'meters' :
@@ -58,7 +58,7 @@ const fromYards = (type:string, value: string) => {
     }
 }
 
-const fromMiles = (type:string, value: string) => {
+const fromMiles = (type:string, value: string):string => {
     const mi = parseInt(value);
     switch (type) {
         case 'meters' :
@@ -73,7 +73,7 @@ const fromMiles = (type:string, value: string) => {
     }
 }
 
-export const convertLength = (from: string, to: string, value: string) => {
+export const convertLength = (from: string, to: string, value: string):string => {
     switch (from) {
         case 'meters' :
             return fromMeters(to, value);

@@ -1,4 +1,4 @@
-const fromFahrenheit = (type:string, value:string) => {
+const fromFahrenheit = (type:string, value:string):string => {
     const f = parseInt(value);
     switch (type) {
         case 'celsius' :
@@ -9,29 +9,29 @@ const fromFahrenheit = (type:string, value:string) => {
     }
 }
 
-const fromKelvin = (type:string, value:string) => {
+const fromKelvin = (type:string, value:string):string => {
     const k = parseInt(value);
     switch (type) {
         case 'celsius' :
-            return (k-273.15).toString();
+            return ((k-273.15).toFixed(2)).toString();
         case'fahrenheit':
             return (((k-273.15)*1.8+32).toFixed(2)).toString();
         default : return value;
     }
 }
 
-const fromCelsius = (type:string, value:string) => {
+const fromCelsius = (type:string, value:string):string => {
     const c = parseInt(value);
     switch (type) {
         case 'kelvin' :
-            return (c+273.15).toString();
+            return ((c+273.15).toFixed(2)).toString();
         case'fahrenheit':
             return ((c*1.8+32).toFixed(2)).toString();
         default : return value;
     }
 }
 
-export const convertTemperature = (from: string, to: string, value: string) => {
+export const convertTemperature = (from: string, to: string, value: string):string => {
     switch (from) {
         case 'fahrenheit' :
             return fromFahrenheit(to, value);

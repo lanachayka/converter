@@ -1,4 +1,4 @@
-const fromKilograms = (type:string, value: string) => {
+const fromKilograms = (type:string, value: string):string => {
     const kg = parseInt(value);
     switch (type) {
         case 'stones' :
@@ -11,7 +11,7 @@ const fromKilograms = (type:string, value: string) => {
     }
 }
 
-const fromGrams = (type:string, value: string) => {
+const fromGrams = (type:string, value: string):string => {
     const g = parseInt(value);
     switch (type) {
         case 'stones' :
@@ -24,7 +24,7 @@ const fromGrams = (type:string, value: string) => {
     }
 }
 
-const fromPounds = (type:string, value: string) => {
+const fromPounds = (type:string, value: string):string => {
     const p = parseInt(value);
     switch (type) {
         case 'stones' :
@@ -37,7 +37,7 @@ const fromPounds = (type:string, value: string) => {
     }
 }
 
-const fromStones= (type:string, value: string) => {
+const fromStones= (type:string, value: string):string => {
     const s = parseInt(value);
     switch (type) {
         case 'pounds' :
@@ -50,7 +50,7 @@ const fromStones= (type:string, value: string) => {
     }
 }
 
-export const convertWeight = (from: string, to: string, value: string) => {
+export const convertWeight = (from: string, to: string, value: string):string => {
     switch (from) {
         case 'kilograms' :
             return fromKilograms(to, value);
