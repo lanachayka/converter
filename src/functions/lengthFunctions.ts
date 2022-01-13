@@ -16,7 +16,7 @@ const fromMeters = (type:string, value:string):string => {
 const fromKilometer = (type:string, value: string):string => {
     const km = parseInt(value);
     switch (type) {
-        case 'meter' :
+        case 'meters' :
             return (km*1000).toString();
         case 'feet' :
             return ((km*3280.8).toFixed(2)).toString();
