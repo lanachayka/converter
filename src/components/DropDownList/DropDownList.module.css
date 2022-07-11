@@ -1,5 +1,9 @@
 .select {
-    color: var(--text-color);
+    color: var(--text);
     text-transform: uppercase;
     text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    height: 35px;
+    border-style: none;
 }

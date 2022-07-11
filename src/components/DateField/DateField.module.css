@@ -2,12 +2,5 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.text {
-    color: var(--text-color);
-}
-
-.clock {
-    color: var(--form-color)
+    padding-right: 20px;
 }

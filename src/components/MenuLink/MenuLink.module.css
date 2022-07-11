@@ -1,15 +1,15 @@
 .link {
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--text-color);
     cursor: pointer;
     border-style: none;
     font-size: 1.2rem;
     background: none;
+    color: var(--text);
 }
 
 .active {
-    color: var(--form-color);
+    color: var(--title);
     text-transform: uppercase;
     text-decoration: underline;
     border-style: none;

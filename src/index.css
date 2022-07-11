@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 :root {
-  --text-color: rgb(85, 130, 122);
-  --form-color: rgb(236,166,139);
-  --button-color: rgb(208,78,68);
-  --line-color: rgb(175,189,184);
+  --title: rgb(56, 103, 246);
+  --line: rgb(158, 158, 208);
+  --background: rgb(245, 241, 252);
+  --text: rgb(109, 109, 109);
 }
 
 body {

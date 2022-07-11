@@ -17,7 +17,6 @@ const Menu: React.FC<MenuProps> = (props) => {
                    <MenuLink key={index} type={type} setCurrentType={props.setCurrentType} active={props.active}/>
                 )}
             </div>
-            <hr className={st.line}/>
         </div>
     );
 }

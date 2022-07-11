@@ -1,11 +1,7 @@
 .title {
     text-align: center;
     text-transform: uppercase;
-    color: var(--text-color);
-}
-
-.line {
-    color: var(--line-color);
+    color: var(--title);
 }
 
 .navigation {
